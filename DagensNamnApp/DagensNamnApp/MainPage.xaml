@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DagensNamnApp"
              x:Class="DagensNamnApp.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Visa dagens NamnsDag !"></Label>
+            <Button Text="Hämta" Clicked="Button_Clicked"/>
+            <Entry x:Name="Antal" Placeholder="Max antal namn"></Entry>
+            <ListView x:Name="Namnsdagar"></ListView>
+        </StackLayout>
+    </ContentPage.Content>
+	
 </ContentPage>
